@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.pyc
+
+# Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Data directories (large / sensitive)
+backend/data/raw/
+backend/data/processed/xai/
+
+# ML training artifacts
+backend/yolov5/runs/
+backend/datasets/
+
+# Models - exclude if large (add back if needed)
+# backend/models/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+.env.production

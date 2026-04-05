@@ -1,0 +1,7 @@
+path: /home/ffaraazm/Pest_Detection_Project/datasets/pdt_final
+train: train/images
+val: val/images
+test: test/images
+
+nc: 2
+names: ['healthy', 'unhealthy']

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f1f5f9;
+    color: #0f172a;
+  }
+}
+
+/* Leaflet pulsing marker for HITL items */
+.pulsing-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pulsing-marker span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d97706;
+  box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.6);
+  animation: pulsate 1.8s ease-out infinite;
+}
+@keyframes pulsate {
+  0%   { transform: scale(0.9);  box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.6); }
+  60%  { transform: scale(1);    box-shadow: 0 0 0 12px rgba(217, 119, 6, 0); }
+  100% { transform: scale(0.9);  box-shadow: 0 0 0 0 rgba(217, 119, 6, 0); }
+}
+
+/* Spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin 0.8s linear infinite; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
