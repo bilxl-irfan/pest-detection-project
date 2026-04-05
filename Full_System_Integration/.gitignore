@@ -1,0 +1,30 @@
+# Python virtualenvs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+
+# Frontend build (committed separately for single-server deploy)
+# frontend/dist/
+
+# Data directories
+model/dashboard/backend/data/raw/
+model/dashboard/backend/data/processed/
+
+# ML training artifacts
+model/dashboard/backend/yolov5/runs/
+model/dashboard/backend/datasets/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.local
+.env.production
