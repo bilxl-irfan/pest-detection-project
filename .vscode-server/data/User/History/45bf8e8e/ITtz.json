@@ -1,0 +1,22 @@
+{
+    
+"remote.extensionKind": {
+       "GitHub.copilot": ["ui"],
+       "GitHub.copilot-chat": ["ui"],
+       "pharndt.node-extra-ca-certs-vscode": ["ui"]
+    },
+    "remote.SSH.remotePlatform": {
+        "cgy-alakazam": "linux",
+        "hpe6u-9": "linux",
+        "cgy-magikarp": "linux"
+    },
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+    "github.copilot.advanced": {},
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    }
+}

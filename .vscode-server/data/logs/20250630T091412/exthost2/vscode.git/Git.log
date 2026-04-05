@@ -1,0 +1,470 @@
+2025-06-30 10:25:12.166 [info] [main] Log level: Info
+2025-06-30 10:25:12.166 [info] [main] Validating found git in: "git"
+2025-06-30 10:25:12.166 [info] [main] Using git "2.43.0" from "git"
+2025-06-30 10:25:12.166 [info] [Model][doInitialScan] Initial repository scan started
+2025-06-30 10:25:12.166 [info] > git rev-parse --show-toplevel [18ms]
+2025-06-30 10:25:12.166 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-06-30 10:25:12.166 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 10:25:12.166 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 10:25:12.166 [info] > git config --get commit.template [19ms]
+2025-06-30 10:25:12.166 [info] > git rev-parse --show-toplevel [16ms]
+2025-06-30 10:25:12.166 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [6ms]
+2025-06-30 10:25:12.166 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 10:25:12.166 [info] > git rev-parse --show-toplevel [6ms]
+2025-06-30 10:25:12.167 [info] > git rev-parse refs/remotes/origin/develop [4ms]
+2025-06-30 10:25:12.173 [info] > git rev-parse --show-toplevel [7ms]
+2025-06-30 10:25:12.177 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-30 10:25:12.177 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 10:25:12.181 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-30 10:25:12.183 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-06-30 10:25:12.264 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z -n51 --shortstat --follow -- /home/ffaraazm/rocm-blogs-internal/blogs/developers-applications-and-models.md [11ms]
+2025-06-30 10:25:12.288 [info] > git hash-object -t tree /dev/null [1ms]
+2025-06-30 10:25:12.728 [info] > git check-ignore -v -z --stdin [2ms]
+2025-06-30 10:25:12.880 [info] > git status -z -uall [710ms]
+2025-06-30 10:25:12.905 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [5ms]
+2025-06-30 10:25:12.909 [info] > git config --get commit.template [4ms]
+2025-06-30 10:25:12.912 [info] > git config --get --local branch.develop.vscode-merge-base [4ms]
+2025-06-30 10:25:12.912 [warning] [Git][config] git config failed: Failed to execute git
+2025-06-30 10:25:12.916 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [4ms]
+2025-06-30 10:25:12.918 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 10:25:12.919 [info] > git reflog develop --grep-reflog=branch: Created from *. [3ms]
+2025-06-30 10:25:12.922 [info] > git rev-parse refs/remotes/origin/develop [4ms]
+2025-06-30 10:25:12.929 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [7ms]
+2025-06-30 10:25:12.932 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 10:25:12.932 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [1ms]
+2025-06-30 10:25:12.936 [info] > git config --add --local branch.develop.vscode-merge-base origin/develop [1ms]
+2025-06-30 10:25:12.945 [info] > git status -z -uall [19ms] (cancelled)
+2025-06-30 10:25:12.946 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [5ms]
+2025-06-30 10:25:12.949 [info] > git config --get commit.template [4ms]
+2025-06-30 10:25:12.953 [info] > git config --get --local branch.develop.vscode-merge-base [4ms]
+2025-06-30 10:25:12.956 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [4ms]
+2025-06-30 10:25:12.959 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 10:25:12.960 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [4ms]
+2025-06-30 10:25:12.964 [info] > git rev-parse refs/remotes/origin/develop [5ms]
+2025-06-30 10:25:12.970 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [7ms]
+2025-06-30 10:25:12.974 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 10:25:12.975 [info] > git diff --name-status -z --diff-filter=ADMR a8e4a6edfc4ddc64800607ac099f24e7ea4e1a7e...refs/remotes/origin/develop [1ms]
+2025-06-30 10:25:13.134 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [144ms]
+2025-06-30 10:25:13.651 [info] > git status -z -uall [684ms]
+2025-06-30 10:25:13.808 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [143ms]
+2025-06-30 10:25:17.014 [info] > git log --oneline --cherry develop...develop@{upstream} -- [2ms]
+2025-06-30 10:25:18.079 [info] > git pull --tags origin develop [1062ms]
+2025-06-30 10:25:18.079 [info] From github.com:ROCm/rocm-blogs-internal
+ * branch              develop    -> FETCH_HEAD
+2025-06-30 10:25:18.087 [info] > git config --get commit.template [4ms]
+2025-06-30 10:25:18.089 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 10:25:18.092 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 10:25:18.093 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2025-06-30 10:25:18.104 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 10:25:18.793 [info] > git status -z -uall [696ms]
+2025-06-30 10:25:26.308 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) refs/remotes/origin/ [5ms]
+2025-06-30 10:25:56.644 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [139ms]
+2025-06-30 10:26:42.820 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-30 10:26:42.821 [info] > git config --get commit.template [3ms]
+2025-06-30 10:26:42.823 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2025-06-30 10:26:42.883 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [53ms]
+2025-06-30 10:26:43.544 [info] > git status -z -uall [717ms]
+2025-06-30 10:26:43.757 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [188ms]
+2025-06-30 10:26:48.559 [info] [Git][getRemotes] No remotes found in the git config file
+2025-06-30 10:26:48.560 [info] > git config --get commit.template [5ms]
+2025-06-30 10:26:48.560 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2025-06-30 10:26:48.576 [info] > git status -z -uall [12ms]
+2025-06-30 10:26:48.595 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [28ms]
+2025-06-30 10:27:34.279 [info] > git remote add main git@github.com:ROCm/rocm-blogs-internal.git [11ms]
+2025-06-30 10:27:34.287 [info] > git config --get commit.template [4ms]
+2025-06-30 10:27:34.288 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2025-06-30 10:27:34.304 [info] > git status -z -uall [12ms]
+2025-06-30 10:27:34.327 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [32ms]
+2025-06-30 10:28:03.839 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [156ms]
+2025-06-30 10:28:06.954 [info] > git fetch main [32620ms]
+2025-06-30 10:28:06.954 [info] From github.com:ROCm/rocm-blogs-internal
+ * [new branch]        708-new-post-ai-inference-orchestration-with-kubernetes-on-instinct-mi300x-part-3 -> main/708-new-post-ai-inference-orchestration-with-kubernetes-on-instinct-mi300x-part-3
+ * [new branch]        8bit-precision           -> main/8bit-precision
+ * [new branch]        Adi4727777-patch-1       -> main/Adi4727777-patch-1
+ * [new branch]        Adi4727777-patch-2       -> main/Adi4727777-patch-2
+ * [new branch]        Adi4727777-patch-3       -> main/Adi4727777-patch-3
+ * [new branch]        BruceXcluding-1007       -> main/BruceXcluding-1007
+ * [new branch]        Danny213123-1055         -> main/Danny213123-1055
+ * [new branch]        Danny213123-1059         -> main/Danny213123-1059
+ * [new branch]        Danny213123-1067         -> main/Danny213123-1067
+ * [new branch]        Danny213123-1090         -> main/Danny213123-1090
+ * [new branch]        Danny213123-1091         -> main/Danny213123-1091
+ * [new branch]        Danny213123-645          -> main/Danny213123-645
+ * [new branch]        Danny213123-652          -> main/Danny213123-652
+ * [new branch]        Danny213123-656          -> main/Danny213123-656
+ * [new branch]        Danny213123-658          -> main/Danny213123-658
+ * [new branch]        Danny213123-663          -> main/Danny213123-663
+ * [new branch]        Danny213123-673          -> main/Danny213123-673
+ * [new branch]        Danny213123-696          -> main/Danny213123-696
+ * [new branch]        Danny213123-720          -> main/Danny213123-720
+ * [new branch]        Danny213123-740          -> main/Danny213123-740
+ * [new branch]        Danny213123-744          -> main/Danny213123-744
+ * [new branch]        Danny213123-876          -> main/Danny213123-876
+ * [new branch]        Danny213123-897          -> main/Danny213123-897
+ * [new branch]        Danny213123-912          -> main/Danny213123-912
+ * [new branch]        Danny213123-915          -> main/Danny213123-915
+ * [new branch]        Danny213123-920          -> main/Danny213123-920
+ * [new branch]        Danny213123-954          -> main/Danny213123-954
+ * [new branch]        Danny213123-966          -> main/Danny213123-966
+ * [new branch]        Danny213123-patch-1      -> main/Danny213123-patch-1
+ * [new branch]        Danny213123-patch-10     -> main/Danny213123-patch-10
+ * [new branch]        Danny213123-patch-11     -> main/Danny213123-patch-11
+ * [new branch]        Danny213123-patch-12     -> main/Danny213123-patch-12
+ * [new branch]        Danny213123-patch-13     -> main/Danny213123-patch-13
+ * [new branch]        Danny213123-patch-14     -> main/Danny213123-patch-14
+ * [new branch]        Danny213123-patch-15     -> main/Danny213123-patch-15
+ * [new branch]        Danny213123-patch-16     -> main/Danny213123-patch-16
+ * [new branch]        Danny213123-patch-17     -> main/Danny213123-patch-17
+ * [new branch]        Danny213123-patch-18     -> main/Danny213123-patch-18
+ * [new branch]        Danny213123-patch-19     -> main/Danny213123-patch-19
+ * [new branch]        Danny213123-patch-2      -> main/Danny213123-patch-2
+ * [new branch]        Danny213123-patch-20     -> main/Danny213123-patch-20
+ * [new branch]        Danny213123-patch-21     -> main/Danny213123-patch-21
+ * [new branch]        Danny213123-patch-22     -> main/Danny213123-patch-22
+ * [new branch]        Danny213123-patch-23     -> main/Danny213123-patch-23
+ * [new branch]        Danny213123-patch-24     -> main/Danny213123-patch-24
+ * [new branch]        Danny213123-patch-25     -> main/Danny213123-patch-25
+ * [new branch]        Danny213123-patch-26     -> main/Danny213123-patch-26
+ * [new branch]        Danny213123-patch-27     -> main/Danny213123-patch-27
+ * [new branch]        Danny213123-patch-28     -> main/Danny213123-patch-28
+ * [new branch]        Danny213123-patch-29     -> main/Danny213123-patch-29
+ * [new branch]        Danny213123-patch-3      -> main/Danny213123-patch-3
+ * [new branch]        Danny213123-patch-30     -> main/Danny213123-patch-30
+ * [new branch]        Danny213123-patch-31     -> main/Danny213123-patch-31
+ * [new branch]        Danny213123-patch-32     -> main/Danny213123-patch-32
+ * [new branch]        Danny213123-patch-33     -> main/Danny213123-patch-33
+ * [new branch]        Danny213123-patch-34     -> main/Danny213123-patch-34
+ * [new branch]        Danny213123-patch-35     -> main/Danny213123-patch-35
+ * [new branch]        Danny213123-patch-37     -> main/Danny213123-patch-37
+ * [new branch]        Danny213123-patch-4      -> main/Danny213123-patch-4
+ * [new branch]        Danny213123-patch-40     -> main/Danny213123-patch-40
+ * [new branch]        Danny213123-patch-5      -> main/Danny213123-patch-5
+ * [new branch]        Danny213123-patch-6      -> main/Danny213123-patch-6
+ * [new branch]        Danny213123-patch-7      -> main/Danny213123-patch-7
+ * [new branch]        Danny213123-patch-8      -> main/Danny213123-patch-8
+ * [new branch]        Danny213123-patch-9      -> main/Danny213123-patch-9
+ * [new branch]        Ehud-Sharlin-patch-2     -> main/Ehud-Sharlin-patch-2
+ * [new branch]        Flash-Attention-2-Blog   -> main/Flash-Attention-2-Blog
+ * [new branch]        LLM_1                    -> main/LLM_1
+ * [new branch]        MAF_Evan                 -> main/MAF_Evan
+ * [new branch]        MI300A-Ansys-Fluent      -> main/MI300A-Ansys-Fluent
+ * [new branch]        MI300X-DevitoPRO         -> main/MI300X-DevitoPRO
+ * [new branch]        QLora_blog               -> main/QLora_blog
+ * [new branch]        RAG                      -> main/RAG
+ * [new branch]        SpellingTest             -> main/SpellingTest
+ * [new branch]        add-tag                  -> main/add-tag
+ * [new branch]        add_dpx_info             -> main/add_dpx_info
+ * [new branch]        anshulgupta4-del-1102    -> main/anshulgupta4-del-1102
+ * [new branch]        anshulgupta4-del-1106    -> main/anshulgupta4-del-1106
+ * [new branch]        anshulgupta4-del-1110    -> main/anshulgupta4-del-1110
+ * [new branch]        anshulgupta4-del-patch-1 -> main/anshulgupta4-del-patch-1
+ * [new branch]        anshulgupta4-del-patch-2 -> main/anshulgupta4-del-patch-2
+ * [new branch]        anshulgupta4-del-patch-3 -> main/anshulgupta4-del-patch-3
+ * [new branch]        anshulgupta4-del-patch-4 -> main/anshulgupta4-del-patch-4
+ * [new branch]        ask-mi-839               -> main/ask-mi-839
+ * [new branch]        ask-mi-865               -> main/ask-mi-865
+ * [new branch]        author-deeksha-goplani-1116 -> main/author-deeksha-goplani-1116
+ * [new branch]        author-ish-kool-1123     -> main/author-ish-kool-1123
+ * [new branch]        author-karthik-kashyap-thatipamula-1118 -> main/author-karthik-kashyap-thatipamula-1118
+ * [new branch]        author-soumitra-chatterjee-1120 -> main/author-soumitra-chatterjee-1120
+ * [new branch]        author-vikas-c-sajjan-1097 -> main/author-vikas-c-sajjan-1097
+ * [new branch]        authors                  -> main/authors
+ * [new branch]        backup-mi300-blog        -> main/backup-mi300-blog
+ * [new branch]        bcornille/fortran-journey -> main/bcornille/fortran-journey
+ * [new branch]        bert-develop             -> main/bert-develop
+ * [new branch]        chatglm                  -> main/chatglm
+ * [new branch]        clip_blog                -> main/clip_blog
+ * [new branch]        codegen                  -> main/codegen
+ * [new branch]        conf                     -> main/conf
+ * [new branch]        cpp                      -> main/cpp
+ * [new branch]        danny                    -> main/danny
+ * [new branch]        date-format              -> main/date-format
+ * [new branch]        decoder                  -> main/decoder
+ * [new branch]        dependabot/pip/blogs/sphinx/rocm-docs-core-1.17.1 -> main/dependabot/pip/blogs/sphinx/rocm-docs-core-1.17.1
+ * [new branch]        develop                  -> main/develop
+ * [new branch]        disable-pdf              -> main/disable-pdf
+ * [new branch]        disqus                   -> main/disqus
+ * [new branch]        douglas-rlhf             -> main/douglas-rlhf
+ * [new branch]        dsilvers-review-quark-quant -> main/dsilvers-review-quark-quant
+ * [new branch]        dumroo-817               -> main/dumroo-817
+ * [new branch]        ecmwf_ectrans_MI300A     -> main/ecmwf_ectrans_MI300A
+ * [new branch]        eliotli-1073             -> main/eliotli-1073
+ * [new branch]        eliotli-1075             -> main/eliotli-1075
+ * [new branch]        faraaz-bot-995           -> main/faraaz-bot-995
+ * [new branch]        faraaz-bot-create-authorlist -> main/faraaz-bot-create-authorlist
+ * [new branch]        faraaz-bot-removeBigFiles -> main/faraaz-bot-removeBigFiles
+ * [new branch]        ffloresy/gptq            -> main/ffloresy/gptq
+ * [new branch]        ffloresy/triton_walkthrough -> main/ffloresy/triton_walkthrough
+ * [new branch]        fix-date-format          -> main/fix-date-format
+ * [new branch]        fix_intro_profiling_blog -> main/fix_intro_profiling_blog
+ * [new branch]        fix_link                 -> main/fix_link
+ * [new branch]        fix_link_for_release     -> main/fix_link_for_release
+ * [new branch]        fix_linting_issue        -> main/fix_linting_issue
+ * [new branch]        fixes                    -> main/fixes
+ * [new branch]        flant5                   -> main/flant5
+ * [new branch]        flux                     -> main/flux
+ * [new branch]        gpu-operator-v1.2        -> main/gpu-operator-v1.2
+ * [new branch]        grado/amp                -> main/grado/amp
+ * [new branch]        grado/amp_fix_link       -> main/grado/amp_fix_link
+ * [new branch]        grado/resnet_extras      -> main/grado/resnet_extras
+ * [new branch]        im-AbhiP-1087            -> main/im-AbhiP-1087
+ * [new branch]        image-dev-2              -> main/image-dev-2
+ * [new branch]        image-develop            -> main/image-develop
+ * [new branch]        jax-cpp                  -> main/jax-cpp
+ * [new branch]        jaykolla-883-backup      -> main/jaykolla-883-backup
+ * [new branch]        jujiang                  -> main/jujiang
+ * [new branch]        jujiang-blog-update      -> main/jujiang-blog-update
+ * [new branch]        jy                       -> main/jy
+ * [new branch]        jychang48/profilers-guide-novice -> main/jychang48/profilers-guide-novice
+ * [new branch]        kbhamd/rocprof-sqlite    -> main/kbhamd/rocprof-sqlite
+ * [new branch]        langchain                -> main/langchain
+ * [new branch]        linting                  -> main/linting
+ * [new branch]        lora_update              -> main/lora_update
+ * [new branch]        main-backup              -> main/main-backup
+ * [new branch]        markdown-code-format-481 -> main/markdown-code-format-481
+ * [new branch]        markdown-code-format-553 -> main/markdown-code-format-553
+ * [new branch]        markdown-code-format-554 -> main/markdown-code-format-554
+ * [new branch]        markdown-code-format-625 -> main/markdown-code-format-625
+ * [new branch]        markdown-code-format-629 -> main/markdown-code-format-629
+ * [new branch]        markdown-code-format-642 -> main/markdown-code-format-642
+ * [new branch]        markdown-code-format-670 -> main/markdown-code-format-670
+ * [new branch]        markdown-code-format-688 -> main/markdown-code-format-688
+ * [new branch]        markdown-code-format-691 -> main/markdown-code-format-691
+ * [new branch]        markdown-code-format-695 -> main/markdown-code-format-695
+ * [new branch]        markdown-code-format-705 -> main/markdown-code-format-705
+ * [new branch]        markdown-code-format-709 -> main/markdown-code-format-709
+ * [new branch]        markdown-code-format-723 -> main/markdown-code-format-723
+ * [new branch]        markdown-code-format-739 -> main/markdown-code-format-739
+ * [new branch]        markdown-code-format-741 -> main/markdown-code-format-741
+ * [new branch]        markdown-code-format-745 -> main/markdown-code-format-745
+ * [new branch]        markdown-code-format-758 -> main/markdown-code-format-758
+ * [new branch]        markdown-code-format-767 -> main/markdown-code-format-767
+ * [new branch]        markdown-code-format-770 -> main/markdown-code-format-770
+ * [new branch]        markdown-code-format-772 -> main/markdown-code-format-772
+ * [new branch]        markdown-code-format-790 -> main/markdown-code-format-790
+ * [new branch]        markdown-code-format-799 -> main/markdown-code-format-799
+ * [new branch]        markdown-code-format-820 -> main/markdown-code-format-820
+ * [new branch]        markdown-code-format-829 -> main/markdown-code-format-829
+ * [new branch]        markdown-code-format-837 -> main/markdown-code-format-837
+ * [new branch]        markdown-code-format-840 -> main/markdown-code-format-840
+ * [new branch]        markdown-code-format-856 -> main/markdown-code-format-856
+ * [new branch]        markdown-code-format-880 -> main/markdown-code-format-880
+ * [new branch]        markdown-code-format-884 -> main/markdown-code-format-884
+ * [new branch]        markdown-code-format-890 -> main/markdown-code-format-890
+ * [new branch]        meenachip-patch-1        -> main/meenachip-patch-1
+ * [new branch]        micklemm/fortran-journey -> main/micklemm/fortran-journey
+ * [new branch]        migraphx                 -> main/migraphx
+ * [new branch]        minor_revision_l3_vt     -> main/minor_revision_l3_vt
+ * [new branch]        minor_revision_lora_fun  -> main/minor_revision_lora_fun
+ * [new branch]        muhosama/author-bio      -> main/muhosama/author-bio
+ * [new branch]        musicgen                 -> main/musicgen
+ * [new branch]        nav-fix                  -> main/nav-fix
+ * [new branch]        new                      -> main/new
+ * [new branch]        nps-mcp                  -> main/nps-mcp
+ * [new branch]        nps-mcp-v2               -> main/nps-mcp-v2
+ * [new branch]        optimization_blog_1      -> main/optimization_blog_1
+ * [new branch]        phi2                     -> main/phi2
+ * [new branch]        pr-branch                -> main/pr-branch
+ * [new branch]        prakamya-mishra-patch-1  -> main/prakamya-mishra-patch-1
+ * [new branch]        pull-request-template    -> main/pull-request-template
+ * [new branch]        python-black             -> main/python-black
+ * [new branch]        python-code-format       -> main/python-code-format
+ * [new branch]        python-code-format-481   -> main/python-code-format-481
+ * [new branch]        python-code-format-553   -> main/python-code-format-553
+ * [new branch]        python-code-format-560   -> main/python-code-format-560
+ * [new branch]        python-code-format-562   -> main/python-code-format-562
+ * [new branch]        python-code-format-597   -> main/python-code-format-597
+ * [new branch]        python-code-format-601   -> main/python-code-format-601
+ * [new branch]        python-code-format-605   -> main/python-code-format-605
+ * [new branch]        python-code-format-611   -> main/python-code-format-611
+ * [new branch]        python-code-format-649   -> main/python-code-format-649
+ * [new branch]        python-code-format-739   -> main/python-code-format-739
+ * [new branch]        python-code-format-802   -> main/python-code-format-802
+ * [new branch]        python-code-format-820   -> main/python-code-format-820
+ * [new branch]        python-code-format-833   -> main/python-code-format-833
+ * [new branch]        quark_draft              -> main/quark_draft
+ * [new branch]        rajbhar/author-bio       -> main/rajbhar/author-bio
+ * [new branch]        ravil/clr-dbg            -> main/ravil/clr-dbg
+ * [new branch]        ray                      -> main/ray
+ * [new branch]        ray-docker               -> main/ray-docker
+ * [new branch]        ray-tocyml               -> main/ray-tocyml
+ * [new branch]        rccl                     -> main/rccl
+ * [new branch]        release                  -> main/release
+ * [new branch]        release_temp             -> main/release_temp
+ * [new branch]        remove-version-numbers   -> main/remove-version-numbers
+ * [new branch]        remove_comment           -> main/remove_comment
+ * [new branch]        rename                   -> main/rename
+ * [new branch]        revert-459-delete-mi300-blog -> main/revert-459-delete-mi300-blog
+ * [new branch]        revert-530-Danny213123-patch-21 -> main/revert-530-Danny213123-patch-21
+ * [new branch]        revert-96-whisper        -> main/revert-96-whisper
+ * [new branch]        rocJPEG                  -> main/rocJPEG
+ * [new branch]        rocm-release-6.4         -> main/rocm-release-6.4
+ * [new branch]        saadrahim-641            -> main/saadrahim-641
+ * [new branch]        saadrahim-648            -> main/saadrahim-648
+ * [new branch]        saadrahim-659            -> main/saadrahim-659
+ * [new branch]        saadrahim-671            -> main/saadrahim-671
+ * [new branch]        saadrahim-715            -> main/saadrahim-715
+ * [new branch]        saadrahim-patch-1        -> main/saadrahim-patch-1
+ * [new branch]        saadrahim-patch-3        -> main/saadrahim-patch-3
+ * [new branch]        saadrahim-patch-4        -> main/saadrahim-patch-4
+ * [new branch]        sample                   -> main/sample
+ * [new branch]        semantic-search-ffloresy -> main/semantic-search-ffloresy
+ * [new branch]        sidebar-test             -> main/sidebar-test
+ * [new branch]        skalade-1086             -> main/skalade-1086
+ * [new branch]        tag-linter-testing       -> main/tag-linter-testing
+ * [new branch]        tag_check                -> main/tag_check
+ * [new branch]        test-new-blog-creation   -> main/test-new-blog-creation
+ * [new branch]        thumbnail-and-textnuggets -> main/thumbnail-and-textnuggets
+ * [new branch]        touch-ups                -> main/touch-ups
+ * [new branch]        tune_search              -> main/tune_search
+ * [new branch]        update_bitsandbytes_installation -> main/update_bitsandbytes_installation
+ * [new branch]        update_bitsandbytes_installation_steps -> main/update_bitsandbytes_installation_steps
+ * [new branch]        update_md_rendering_lora_fundamental -> main/update_md_rendering_lora_fundamental
+ * [new branch]        visual-changes           -> main/visual-changes
+ * [new branch]        vit                      -> main/vit
+ * [new branch]        whisper                  -> main/whisper
+2025-06-30 10:28:06.962 [info] > git config --get commit.template [4ms]
+2025-06-30 10:28:06.962 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2025-06-30 10:28:06.979 [info] > git status -z -uall [14ms]
+2025-06-30 10:28:07.005 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [36ms]
+2025-06-30 10:28:07.216 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [163ms]
+2025-06-30 10:28:08.180 [info] > git config --get commit.template [4ms]
+2025-06-30 10:28:08.181 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 10:28:08.197 [info] > git status -z -uall [13ms]
+2025-06-30 10:28:08.219 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [31ms]
+2025-06-30 10:45:05.390 [info] > git config --get commit.template [5ms]
+2025-06-30 10:45:05.391 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 10:45:05.408 [info] > git status -z -uall [13ms]
+2025-06-30 10:45:05.431 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [32ms]
+2025-06-30 10:45:24.326 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/HEAD'
+2025-06-30 10:45:24.335 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/config'
+2025-06-30 10:45:24.345 [warning] [Git][getHEAD] Failed to parse HEAD file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/HEAD'
+2025-06-30 10:45:24.354 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/config'
+2025-06-30 10:55:26.828 [info] > git init -b main [11ms]
+2025-06-30 10:55:26.828 [info] warning: re-init: ignored --initial-branch=main
+2025-06-30 10:55:26.835 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-30 10:55:26.841 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-06-30 10:55:26.846 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 10:55:26.846 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 10:55:26.855 [info] > git config --get commit.template [4ms]
+2025-06-30 10:55:26.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 10:55:26.860 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/faraaz-bot-removeBigFiles'
+2025-06-30 10:55:26.861 [info] > git rev-parse refs/remotes/origin/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 10:55:26.874 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 10:55:26.877 [info] > git status -z -uall [11ms]
+2025-06-30 10:55:26.927 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [44ms]
+2025-06-30 10:55:26.931 [info] > git config --get commit.template [11ms]
+2025-06-30 10:55:26.936 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [5ms]
+2025-06-30 10:55:26.936 [warning] [Git][config] git config failed: Failed to execute git
+2025-06-30 10:55:26.940 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [4ms]
+2025-06-30 10:55:26.944 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/faraaz-bot-removeBigFiles'
+2025-06-30 10:55:26.944 [info] > git reflog faraaz-bot-removeBigFiles --grep-reflog=branch: Created from *. [4ms]
+2025-06-30 10:55:26.949 [info] > git rev-parse refs/remotes/origin/faraaz-bot-removeBigFiles [5ms]
+2025-06-30 10:55:26.956 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/remotes/origin/faraaz-bot-removeBigFiles [8ms]
+2025-06-30 10:55:26.960 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-06-30 10:55:26.961 [info] > git config --add --local branch.faraaz-bot-removeBigFiles.vscode-merge-base origin/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 10:55:26.971 [info] > git status -z -uall [19ms] (cancelled)
+2025-06-30 10:55:26.971 [info] > git config --get commit.template [1ms]
+2025-06-30 10:55:26.971 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [5ms]
+2025-06-30 10:55:26.979 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [4ms]
+2025-06-30 10:55:26.984 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [5ms]
+2025-06-30 10:55:26.988 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/faraaz-bot-removeBigFiles'
+2025-06-30 10:55:26.991 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/faraaz-bot-removeBigFiles refs/remotes/origin/faraaz-bot-removeBigFiles [8ms]
+2025-06-30 10:55:26.995 [info] > git rev-parse refs/remotes/origin/faraaz-bot-removeBigFiles [7ms]
+2025-06-30 10:55:27.007 [info] > git merge-base refs/heads/faraaz-bot-removeBigFiles refs/remotes/origin/faraaz-bot-removeBigFiles [12ms]
+2025-06-30 10:55:27.012 [info] > git status -z -uall [13ms]
+2025-06-30 10:55:27.012 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2025-06-30 10:55:27.023 [info] > git merge-base refs/heads/faraaz-bot-removeBigFiles refs/remotes/origin/faraaz-bot-removeBigFiles [5ms]
+2025-06-30 10:55:27.027 [info] > git diff --name-status -z --diff-filter=ADMR 3337757069c9067ae020421b9ac891a4e0a76e61...refs/remotes/origin/faraaz-bot-removeBigFiles [16ms]
+2025-06-30 10:55:27.028 [info] > git merge-base refs/heads/faraaz-bot-removeBigFiles refs/remotes/origin/faraaz-bot-removeBigFiles [6ms]
+2025-06-30 10:55:27.032 [info] > git diff --name-status -z --diff-filter=ADMR 3337757069c9067ae020421b9ac891a4e0a76e61...refs/remotes/origin/faraaz-bot-removeBigFiles [5ms]
+2025-06-30 10:55:27.033 [info] > git diff --name-status -z --diff-filter=ADMR 3337757069c9067ae020421b9ac891a4e0a76e61...refs/remotes/origin/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 10:55:27.152 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [145ms]
+2025-06-30 10:55:36.486 [info] > git diff-tree -r --name-status -z --diff-filter=ADMR --find-renames=50% 88f53c5ced3d1ac8e26fb739bff3b9bb79082468 f6d5c0ef91d6a2eff97eea234d6b65abfc932b9b [2ms]
+2025-06-30 10:55:37.014 [info] > git check-ignore -v -z --stdin [2ms]
+2025-06-30 10:55:38.785 [info] > git diff-tree -r --name-status -z --diff-filter=ADMR --find-renames=50% 61b849d869a414bf62d59ce9c5c46cbe2f3b40da 3337757069c9067ae020421b9ac891a4e0a76e61 [2ms]
+2025-06-30 10:55:39.314 [info] > git check-ignore -v -z --stdin [2ms]
+2025-06-30 11:13:31.201 [info] > git config --get commit.template [6ms]
+2025-06-30 11:13:31.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:13:31.216 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-06-30 11:13:31.993 [info] > git status -z -uall [786ms]
+2025-06-30 11:13:32.158 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [147ms]
+2025-06-30 11:13:39.761 [info] > git config --get commit.template [5ms]
+2025-06-30 11:13:39.762 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:13:39.776 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-06-30 11:13:39.778 [info] > git status -z -uall [11ms]
+2025-06-30 11:18:15.742 [info] > git config --get commit.template [5ms]
+2025-06-30 11:18:15.743 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [2ms]
+2025-06-30 11:18:15.759 [info] > git status -z -uall [12ms]
+2025-06-30 11:18:15.782 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [31ms]
+2025-06-30 11:18:15.966 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [161ms]
+2025-06-30 11:18:31.789 [info] > git config --get commit.template [5ms]
+2025-06-30 11:18:31.790 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [2ms]
+2025-06-30 11:18:31.807 [info] > git status -z -uall [13ms]
+2025-06-30 11:18:31.831 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [32ms]
+2025-06-30 11:23:35.452 [info] > git config --get commit.template [5ms]
+2025-06-30 11:23:35.452 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2025-06-30 11:23:35.457 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 11:23:35.459 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2025-06-30 11:23:35.472 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 11:23:35.890 [info] > git status -z -uall [427ms]
+2025-06-30 11:23:35.898 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2025-06-30 11:23:35.904 [info] > git config --get --local branch.develop.vscode-merge-base [1ms]
+2025-06-30 11:23:35.904 [warning] [Git][config] git config failed: Failed to execute git
+2025-06-30 11:23:35.910 [info] > git reflog develop --grep-reflog=branch: Created from *. [1ms]
+2025-06-30 11:23:35.916 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2025-06-30 11:23:35.921 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [1ms]
+2025-06-30 11:23:35.927 [info] > git config --add --local branch.develop.vscode-merge-base origin/develop [1ms]
+2025-06-30 11:23:35.937 [info] > git config --get commit.template [5ms]
+2025-06-30 11:23:35.938 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 11:23:35.942 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 11:23:35.943 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2025-06-30 11:23:35.956 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 11:23:36.364 [info] > git status -z -uall [417ms]
+2025-06-30 11:23:36.378 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [2ms]
+2025-06-30 11:23:36.383 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [12ms]
+2025-06-30 11:23:36.392 [info] > git diff --name-status -z --diff-filter=ADMR a8e4a6edfc4ddc64800607ac099f24e7ea4e1a7e...refs/remotes/origin/develop [9ms]
+2025-06-30 11:23:36.393 [info] > git config --get --local branch.develop.vscode-merge-base [6ms]
+2025-06-30 11:23:36.399 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [1ms]
+2025-06-30 11:23:36.532 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [140ms]
+2025-06-30 11:24:55.759 [info] > git config --get commit.template [1ms]
+2025-06-30 11:24:55.765 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 11:24:55.770 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 11:24:55.771 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2025-06-30 11:24:55.785 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-06-30 11:24:56.195 [info] > git status -z -uall [420ms]
+2025-06-30 11:25:06.685 [info] > git config --get commit.template [5ms]
+2025-06-30 11:25:06.686 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 11:25:06.699 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ffaraazm/rocm-blogs-internal/.git/refs/remotes/origin/develop'
+2025-06-30 11:25:06.700 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2025-06-30 11:25:06.713 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 11:25:07.123 [info] > git status -z -uall [418ms]
+2025-06-30 11:25:54.097 [info] > git config --get commit.template [6ms]
+2025-06-30 11:25:54.098 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [2ms]
+2025-06-30 11:25:54.111 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-06-30 11:25:54.521 [info] > git status -z -uall [419ms]
+2025-06-30 11:25:54.528 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:25:54.534 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [1ms]
+2025-06-30 11:25:54.534 [warning] [Git][config] git config failed: Failed to execute git
+2025-06-30 11:25:54.541 [info] > git reflog faraaz-bot-removeBigFiles --grep-reflog=branch: Created from *. [2ms]
+2025-06-30 11:25:54.547 [info] > git reflog HEAD --grep-reflog=checkout: moving from .* to faraaz-bot-removeBigFiles [2ms]
+2025-06-30 11:25:54.553 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2025-06-30 11:25:54.558 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/remotes/origin/develop [1ms]
+2025-06-30 11:25:54.564 [info] > git config --add --local branch.faraaz-bot-removeBigFiles.vscode-merge-base origin/develop [1ms]
+2025-06-30 11:25:54.574 [info] > git config --get commit.template [5ms]
+2025-06-30 11:25:54.575 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:25:54.588 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-06-30 11:25:54.999 [info] > git status -z -uall [420ms]
+2025-06-30 11:25:55.006 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:25:55.017 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [6ms]
+2025-06-30 11:25:55.023 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [2ms]
+2025-06-30 11:25:55.158 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [141ms]
+2025-06-30 11:28:13.707 [info] > git config --get commit.template [6ms]
+2025-06-30 11:28:13.708 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-06-30 11:28:13.726 [info] > git status -z -uall [13ms]
+2025-06-30 11:28:13.749 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [32ms]
+2025-06-30 11:28:13.936 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [167ms]
+2025-06-30 11:28:28.357 [info] > git config --get commit.template [6ms]
+2025-06-30 11:28:28.358 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [2ms]
+2025-06-30 11:28:28.375 [info] > git status -z -uall [12ms]
+2025-06-30 11:28:28.397 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [30ms]

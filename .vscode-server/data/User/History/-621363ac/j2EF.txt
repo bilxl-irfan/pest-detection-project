@@ -1,0 +1,95 @@
+cmake_minimum_required( VERSION 3.22 )
+
+set( RUNTIME "cuda"
+     CACHE STRING "Which backend to build for: cuda|hip|scale" )
+set_property(CACHE RUNTIME PROPERTY STRINGS cuda hip scale)
+
+if(RUNTIME STREQUAL "cuda")
+  message(STATUS "CUDA")
+  project(kll VERSION 1.0 LANGUAGES CXX CUDA)
+elseif(RUNTIME STREQUAL "hip")
+  message(STATUS "HIP")
+  project(kll VERSION 1.0 LANGUAGES CXX HIP)
+elseif(RUNTIME STREQUAL "scale")
+  message(STATUS "SCALE")
+  set ( SCALE_DIR "/opt/scale"
+      CACHE PATH "Prefix where SCALE is installed" )
+  set ( SCALE_GPU_ARCH "$(rocm_agent_enumerator -name | awk -F: '/^gfx/ { print $1; exit }')"
+      CACHE PATH "AMD GPU Architecture" )
+  project(kll VERSION 1.0 LANGUAGES CXX CUDA)
+else()
+  message(FATAL_ERROR "Unknown RUNTIME='${RUNTIME}'")
+endif()
+
+if(RUNTIME STREQUAL "cuda")
+  message(STATUS "Configuring for CUDA (nvcc)")
+  find_program(NVCC_PATH nvcc REQUIRED)
+  set(CMAKE_CUDA_COMPILER ${NVCC_PATH}
+      CACHE FILEPATH "CUDA compiler (nvcc)")
+
+elseif(RUNTIME STREQUAL "hip")
+  message(STATUS "Configuring for HIP (hipcc)")
+  find_program(HIPCC_PATH hipcc REQUIRED)
+  set(CMAKE_HIP_COMPILER ${HIPCC_PATH}
+      CACHE FILEPATH "HIP compiler (hipcc)")
+
+elseif(RUNTIME STREQUAL "scale")
+  message(STATUS "Configuring for SCALE (scale) - run: source \"${SCALE_DIR}/bin/scaleenv\" \"${SCALE_GPU_ARCH}\"")
+  find_program(NVCC_PATH nvcc HINTS ENV PATH REQUIRED)
+  set(CMAKE_CUDA_COMPILER ${NVCC_PATH}
+      CACHE FILEPATH "CUDA compiler (nvcc), redirected by scaleenv")
+  if(DEFINED ENV{CUDAARCHS})
+    set(CMAKE_CUDA_ARCHITECTURES $ENV{CUDAARCHS}
+        CACHE STRING "GPU archs (from scaleenv’s CUDAARCHS)")
+    message(STATUS "Using CUDAARCHS=${CMAKE_CUDA_ARCHITECTURES}")
+  else()
+    message(WARNING
+      "CUDAARCHS not set — make sure you sourced scaleenv before calling CMake")
+  endif()
+  set(CMAKE_INSTALL_RPATH_USE_LINK_PATH ON)
+  
+else()
+  message(FATAL_ERROR "Unknown RUNTIME '${RUNTIME}' (choose cuda, hip or scale)")
+endif()
+
+enable_language(CUDA)
+
+set( CMAKE_CXX_STANDARD 17 )
+set( CMAKE_CXX_STANDARD_REQUIRED ON )
+set( CMAKE_CXX_EXTENSIONS OFF )
+
+include_directories(include)
+include(FetchContent)
+
+# Google Benchmark (https://github.com/google/benchmark)
+message(STATUS "Fetching Google Benchmark ....")
+option(BENCHMARK_ENABLE_TESTING "Enable testing of the benchmark library" OFF)
+option(BENCHMARK_ENABLE_INSTALL "Enable installation of benchmark" OFF)
+FetchContent_Declare(
+    googlebenchmark
+    GIT_REPOSITORY https://github.com/google/benchmark.git
+    GIT_TAG        v1.9.1
+)
+set(HAVE_STD_REGEX ON)
+set(RUN_HAVE_STD_REGEX 1)
+FetchContent_MakeAvailable(googlebenchmark)
+
+# Google Test
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/release-1.12.1.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+
+file(GLOB CU_SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "*.cu")
+
+foreach(cu_file IN LISTS CU_SOURCES)
+    get_filename_component(exe_name ${cu_file} NAME_WE)
+    add_executable(${exe_name} ${cu_file})
+    target_include_directories(${exe_name} PRIVATE ${CMAKE_SOURCE_DIR})
+    target_link_libraries(${exe_name} benchmark::benchmark)
+endforeach()

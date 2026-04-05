@@ -1,0 +1,84 @@
+2025-07-01 12:32:07.284 [info] 
+
+
+
+
+2025-07-01 12:32:07.290 [info] Extension host agent started.
+2025-07-01 12:32:07.335 [info] [<unknown>][9af1de50][ExtensionHostConnection] New connection established.
+2025-07-01 12:32:07.340 [info] [<unknown>][987fdd65][ManagementConnection] New connection established.
+2025-07-01 12:32:07.353 [info] Deleted marked for removal extension from disk github.copilot-chat /home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.3
+2025-07-01 12:32:07.415 [info] [<unknown>][9af1de50][ExtensionHostConnection] <154359> Launched Extension Host Process.
+2025-07-01 12:32:07.454 [info] ComputeTargetPlatform: linux-x64
+2025-07-01 12:32:10.365 [info] ComputeTargetPlatform: linux-x64
+2025-07-01 12:37:07.291 [info] New EH opened, aborting shutdown
+2025-07-01 17:13:36.010 [info] [<unknown>][987fdd65][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-07-01 18:55:01.369 [info] [<unknown>][987fdd65][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-07-01 18:55:01.370 [info] [<unknown>][843907be][ExtensionHostConnection] New connection established.
+2025-07-01 18:55:01.375 [info] [<unknown>][843907be][ExtensionHostConnection] <170941> Launched Extension Host Process.
+2025-07-01 18:55:01.376 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/server-main.js:191:1060)
+    at process.emit (node:events:530:35)
+2025-07-01 18:55:01.389 [info] [<unknown>][b16db223][ManagementConnection] New connection established.
+2025-07-01 18:55:33.430 [error] CodeExpectedError: Could not find pty 19 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-07-01 18:55:33.431 [error] CodeExpectedError: Could not find pty 19 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-07-01 18:55:33.432 [error] CodeExpectedError: Could not find pty 19 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-07-01 18:55:47.772 [error] CodeExpectedError: Could not find pty 19 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-07-01 19:00:01.621 [info] [<unknown>][9af1de50][ExtensionHostConnection] <154359> Extension Host Process exited with code: 0, signal: null.
+2025-07-01 19:00:01.635 [info] [<unknown>][987fdd65][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2025-07-01 19:40:49.546 [info] [<unknown>][b16db223][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-07-01 22:40:33.353 [info] [<unknown>][843907be][ExtensionHostConnection] <170941> Extension Host Process exited with code: 0, signal: null.
+2025-07-01 22:40:33.353 [info] Last EH closed, waiting before shutting down
+2025-07-01 22:41:02.010 [info] [<unknown>][b16db223][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2025-07-01 22:45:33.354 [info] Last EH closed, shutting down

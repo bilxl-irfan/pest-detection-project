@@ -1,0 +1,96 @@
+2025-07-03 16:02:34.814 [info] [main] Log level: Info
+2025-07-03 16:02:34.814 [info] [main] Validating found git in: "git"
+2025-07-03 16:02:34.814 [info] [main] Using git "2.43.0" from "git"
+2025-07-03 16:02:34.814 [info] [Model][doInitialScan] Initial repository scan started
+2025-07-03 16:02:34.814 [info] > git rev-parse --show-toplevel [19ms]
+2025-07-03 16:02:34.814 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-07-03 16:02:34.814 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm
+2025-07-03 16:02:34.814 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm
+2025-07-03 16:02:34.814 [info] > git config --get commit.template [3ms]
+2025-07-03 16:02:34.814 [info] > git rev-parse --show-toplevel [2ms]
+2025-07-03 16:02:34.814 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [5ms]
+2025-07-03 16:02:34.814 [warning] [Git][getBranch] No such branch: faraaz-bot-removeBigFiles
+2025-07-03 16:02:34.814 [info] > git rev-parse --git-dir --git-common-dir [9ms]
+2025-07-03 16:02:34.814 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/product-management-testing
+2025-07-03 16:02:34.814 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/product-management-testing
+2025-07-03 16:02:34.814 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-07-03 16:02:34.814 [info] > git config --get commit.template [25ms]
+2025-07-03 16:02:34.814 [info] > git rev-parse --show-toplevel [22ms]
+2025-07-03 16:02:34.814 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/memory refs/remotes/memory [3ms]
+2025-07-03 16:02:34.814 [info] > git rev-parse --show-toplevel [1ms]
+2025-07-03 16:02:34.823 [info] > git status -z -uall [3ms]
+2025-07-03 16:02:34.824 [info] > git rev-parse --show-toplevel [6ms]
+2025-07-03 16:02:34.827 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-07-03 16:02:34.840 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/memory refs/remotes/memory [3ms]
+2025-07-03 16:02:34.843 [info] > git rev-parse --show-toplevel [17ms]
+2025-07-03 16:02:34.845 [info] > git config --get commit.template [5ms]
+2025-07-03 16:02:34.847 [info] > git config --get --local branch.memory.vscode-merge-base [4ms]
+2025-07-03 16:02:34.853 [info] > git rev-parse --show-toplevel [8ms]
+2025-07-03 16:02:34.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/memory refs/remotes/origin/memory [7ms]
+2025-07-03 16:02:34.861 [info] > git rev-parse --show-toplevel [5ms]
+2025-07-03 16:02:34.861 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/memory refs/remotes/memory [9ms]
+2025-07-03 16:02:34.864 [info] > git merge-base refs/heads/memory refs/remotes/origin/memory [5ms]
+2025-07-03 16:02:34.867 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-03 16:02:34.875 [info] > git status -z -uall [3ms]
+2025-07-03 16:02:34.876 [info] > git rev-parse --show-toplevel [7ms]
+2025-07-03 16:02:34.876 [info] > git diff --name-status -z --diff-filter=ADMR 2913ceb8d1a151701ec2e19c32fbc467ebf956d9...refs/remotes/origin/memory [10ms]
+2025-07-03 16:02:34.879 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2025-07-03 16:02:34.882 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-03 16:02:34.886 [info] > git rev-parse --show-toplevel [1ms]
+2025-07-03 16:02:34.890 [info] > git rev-parse --show-toplevel [1ms]
+2025-07-03 16:02:34.894 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-07-03 16:02:34.898 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/rocm-blogs-internal
+2025-07-03 16:02:34.898 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/rocm-blogs-internal
+2025-07-03 16:02:34.910 [info] > git rev-parse --show-toplevel [7ms]
+2025-07-03 16:02:34.911 [info] > git config --get commit.template [9ms]
+2025-07-03 16:02:34.916 [info] > git rev-parse --show-toplevel [3ms]
+2025-07-03 16:02:34.992 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [76ms]
+2025-07-03 16:02:35.000 [info] > git rev-parse --show-toplevel [81ms]
+2025-07-03 16:02:35.068 [info] > git status -z -uall [295ms] (cancelled)
+2025-07-03 16:02:35.068 [info] > git status -z -uall [73ms]
+2025-07-03 16:02:35.068 [info] > git rev-parse --show-toplevel [63ms]
+2025-07-03 16:02:35.069 [info] [Model][doInitialScan] Initial repository scan completed - repositories (3), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-07-03 16:02:35.074 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [9ms]
+2025-07-03 16:02:35.074 [warning] [Git][getBranch] No such branch: faraaz-bot-removeBigFiles
+2025-07-03 16:02:35.074 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for faraaz-bot-removeBigFiles: Error: No such branch: faraaz-bot-removeBigFiles.
+2025-07-03 16:02:35.074 [info] > git config --get commit.template [1ms]
+2025-07-03 16:02:35.078 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [81ms]
+2025-07-03 16:02:35.128 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [44ms]
+2025-07-03 16:02:35.131 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [54ms]
+2025-07-03 16:02:35.131 [warning] [Git][getBranch] No such branch: faraaz-bot-removeBigFiles
+2025-07-03 16:02:35.741 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [605ms]
+2025-07-03 16:02:35.742 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [611ms]
+2025-07-03 16:02:35.746 [info] > git config --get commit.template [621ms]
+2025-07-03 16:02:35.770 [info] > git check-ignore -v -z --stdin [20ms]
+2025-07-03 16:02:35.770 [info] > git check-ignore -v -z --stdin [13ms]
+2025-07-03 16:02:35.770 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [24ms]
+2025-07-03 16:02:35.770 [warning] [Git][getBranch] No such branch: origin/develop
+2025-07-03 16:02:35.794 [info] > git check-ignore -v -z --stdin [40ms]
+2025-07-03 16:02:35.803 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [24ms]
+2025-07-03 16:02:35.810 [info] > git reflog faraaz-bot-removeBigFiles --grep-reflog=branch: Created from *. [35ms]
+2025-07-03 16:02:35.873 [info] > git status -z -uall [739ms] (cancelled)
+2025-07-03 16:02:35.873 [info] > git status -z -uall [66ms]
+2025-07-03 16:02:35.873 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [60ms]
+2025-07-03 16:02:35.873 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-07-03 16:02:35.873 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-07-03 16:02:35.905 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [96ms]
+2025-07-03 16:02:51.804 [info] > git show --textconv :src/rocFFT-misc/benchs/memcpy/helper.h [9ms]
+2025-07-03 16:02:51.804 [info] > git ls-files --stage -- src/rocFFT-misc/benchs/memcpy/helper.h [2ms]
+2025-07-03 16:02:51.812 [info] > git cat-file -s da22ddad6e96acd24916c67b4087bbf416ca1804 [1ms]
+2025-07-03 16:02:51.906 [info] > git blame --root --incremental 2913ceb8d1a151701ec2e19c32fbc467ebf956d9 -- src/rocFFT-misc/benchs/memcpy/helper.h [7ms]
+2025-07-03 16:03:12.748 [info] > git config --get commit.template [8ms]
+2025-07-03 16:03:12.749 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/memory refs/remotes/memory [2ms]
+2025-07-03 16:03:12.765 [info] > git status -z -uall [8ms]
+2025-07-03 16:03:12.765 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-07-03 16:03:17.777 [info] > git config --get commit.template [1ms]
+2025-07-03 16:03:17.786 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/memory refs/remotes/memory [2ms]
+2025-07-03 16:03:17.800 [info] > git status -z -uall [7ms]
+2025-07-03 16:03:17.801 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-07-03 16:03:18.423 [info] > git config --get commit.template [2ms]
+2025-07-03 16:03:18.430 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [1ms]
+2025-07-03 16:03:18.430 [warning] [Git][getBranch] No such branch: faraaz-bot-removeBigFiles
+2025-07-03 16:03:18.446 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-07-03 16:03:18.666 [info] > git status -z -uall [229ms] (cancelled)
+2025-07-03 16:03:19.746 [info] > git ls-files --stage -- src/rocFFT-misc/benchs/memcpy/helper.h [1ms]
+2025-07-03 16:03:19.755 [info] > git cat-file -s da22ddad6e96acd24916c67b4087bbf416ca1804 [2ms]
+2025-07-03 16:03:19.769 [info] > git show --textconv :src/rocFFT-misc/benchs/memcpy/helper.h [2ms]

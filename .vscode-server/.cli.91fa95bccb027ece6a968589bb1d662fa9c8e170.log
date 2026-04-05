@@ -1,0 +1,6 @@
+Listening on 127.0.0.1:40735
+[2025-06-15 10:58:23] info Disposed of connection to running server.
+[2025-06-15 10:58:23] info Checking /home/ffaraazm/.vscode-server/cli/servers/Stable-91fa95bccb027ece6a968589bb1d662fa9c8e170/log.txt and /home/ffaraazm/.vscode-server/cli/servers/Stable-91fa95bccb027ece6a968589bb1d662fa9c8e170/pid.txt for a running server...
+[2025-06-15 10:58:23] info Starting server...
+[2025-06-15 10:58:24] info Server started
+[2025-06-15 10:59:50] info Disposed of connection to running server.

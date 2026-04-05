@@ -1,0 +1,13 @@
+2025-06-26 13:56:11.511 [info] Extension host with pid 881608 started
+2025-06-26 13:56:11.520 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/097bfcd4d1dad6a08068969df5b9f593/vscode.lock': Lock acquired.
+2025-06-26 13:56:13.956 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-06-26 13:56:13.957 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-06-26 13:56:14.046 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-06-26 13:56:14.046 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-06-26 13:56:14.217 [info] Eager extensions activated
+2025-06-26 13:56:14.217 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-06-26 13:56:14.218 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-06-26 13:57:07.740 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-06-26 18:12:37.929 [info] Extension host terminating: renderer disconnected for too long (1)
+2025-06-26 18:12:37.930 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/097bfcd4d1dad6a08068969df5b9f593/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-06-26 18:12:37.950 [info] Extension host with pid 881608 exiting with code 0

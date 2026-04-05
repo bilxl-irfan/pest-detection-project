@@ -1,0 +1,4 @@
+Listening on 127.0.0.1:44953
+[2025-07-03 16:02:31] info Disposed of connection to running server.
+[2025-07-03 16:02:31] info Checking /home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/log.txt and /home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/pid.txt for a running server...
+[2025-07-03 16:02:31] info Found running server (pid=231049)

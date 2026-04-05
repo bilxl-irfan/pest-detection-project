@@ -1,0 +1,37 @@
+2025-06-27 14:17:12.933 [info] [main] Log level: Info
+2025-06-27 14:17:12.933 [info] [main] Validating found git in: "git"
+2025-06-27 14:17:12.933 [info] [main] Using git "2.43.0" from "git"
+2025-06-27 14:17:12.933 [info] [Model][doInitialScan] Initial repository scan started
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-06-27 14:17:12.933 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/rocm-blogs-internal
+2025-06-27 14:17:12.933 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/rocm-blogs-internal
+2025-06-27 14:17:12.933 [info] > git config --get commit.template [3ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [6ms]
+2025-06-27 14:17:12.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/Danny213123-patch-36 refs/remotes/Danny213123-patch-36 [6ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [8ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-27 14:17:12.933 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-06-27 14:17:12.933 [info] > git status -z -uall [140ms] (cancelled)
+2025-06-27 14:17:12.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/Danny213123-patch-36 refs/remotes/Danny213123-patch-36 [676ms]
+2025-06-27 14:17:12.933 [info] > git config --get --local branch.Danny213123-patch-36.vscode-merge-base [11ms]
+2025-06-27 14:17:12.933 [info] > git config --get commit.template [101ms]
+2025-06-27 14:17:12.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/Danny213123-patch-36 refs/remotes/origin/Danny213123-patch-36 [41ms]
+2025-06-27 14:17:12.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/Danny213123-patch-36 refs/remotes/Danny213123-patch-36 [33ms]
+2025-06-27 14:17:12.933 [info] > git merge-base refs/heads/Danny213123-patch-36 refs/remotes/origin/Danny213123-patch-36 [22ms]
+2025-06-27 14:17:12.933 [info] > git diff --name-status -z --diff-filter=ADMR 6faa1a732ce21603aafe36a68b4665ebbdb27605...refs/remotes/origin/Danny213123-patch-36 [9ms]
+2025-06-27 14:17:12.938 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-06-27 14:17:13.030 [info] > git status -z -uall [102ms] (cancelled)
+2025-06-27 14:17:13.711 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z -n51 --shortstat --follow -- /home/ffaraazm/rocm-blogs-internal/blogs/conf.py [0ms] (cancelled)
+2025-06-27 14:17:13.713 [info] > git check-ignore -v -z --stdin [9ms]
+2025-06-27 15:48:49.720 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z -n51 --shortstat --follow -- /home/ffaraazm/rocm-blogs-internal/blogs/developers-ecosystems-and-partners.md [12ms]
+2025-06-27 15:48:49.732 [info] > git hash-object -t tree /dev/null [1ms]
+2025-06-27 15:48:51.309 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z -n51 --shortstat --follow -- /home/ffaraazm/rocm-blogs-internal/blogs/developers-applications-and-models.md [14ms]
+2025-06-27 15:48:53.664 [info] > git check-ignore -v -z --stdin [3ms]
+2025-06-27 15:48:58.244 [info] > git check-ignore -v -z --stdin [2ms]

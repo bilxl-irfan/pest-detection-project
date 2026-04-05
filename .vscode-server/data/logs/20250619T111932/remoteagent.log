@@ -1,0 +1,62 @@
+2025-06-19 11:19:32.714 [info] 
+
+
+
+
+2025-06-19 11:19:32.721 [info] Extension host agent started.
+2025-06-19 11:19:32.756 [info] [<unknown>][81837d54][ManagementConnection] New connection established.
+2025-06-19 11:19:32.762 [info] [<unknown>][e724e084][ExtensionHostConnection] New connection established.
+2025-06-19 11:19:32.834 [info] ComputeTargetPlatform: linux-x64
+2025-06-19 11:19:32.842 [info] [<unknown>][e724e084][ExtensionHostConnection] <701704> Launched Extension Host Process.
+2025-06-19 11:19:36.049 [info] ComputeTargetPlatform: linux-x64
+2025-06-19 11:19:36.834 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-06-19 11:19:36.834 [error] CodeExpectedError: Could not find pty 4 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-06-19 11:19:37.165 [info] Getting Manifest... github.copilot
+2025-06-19 11:19:37.166 [info] Getting Manifest... github.copilot-chat
+2025-06-19 11:19:37.353 [info] Installing extension: github.copilot {"productVersion":{"version":"1.101.0","date":"2025-06-11T15:00:50.123Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"profileLocation":{"$mid":1,"fsPath":"/home/ffaraazm/.vscode-server/extensions/extensions.json","external":"file:///home/ffaraazm/.vscode-server/extensions/extensions.json","path":"/home/ffaraazm/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2025-06-19 11:19:37.411 [info] Installing extension: github.copilot-chat {"productVersion":{"version":"1.101.0","date":"2025-06-11T15:00:50.123Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"profileLocation":{"$mid":1,"fsPath":"/home/ffaraazm/.vscode-server/extensions/extensions.json","external":"file:///home/ffaraazm/.vscode-server/extensions/extensions.json","path":"/home/ffaraazm/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2025-06-19 11:19:39.816 [info] Extension signature verification result for github.copilot-chat: Success. Internal Code: 0. Executed: true. Duration: 635ms.
+2025-06-19 11:19:39.928 [info] Extracted extension to file:///home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.1: github.copilot-chat
+2025-06-19 11:19:39.946 [info] Renamed to /home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.1
+2025-06-19 11:19:39.972 [info] Extension installed successfully: github.copilot-chat file:///home/ffaraazm/.vscode-server/extensions/extensions.json
+2025-06-19 11:19:39.976 [info] Marked extension as removed github.copilot-chat-0.28.0
+2025-06-19 11:19:40.657 [info] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 894ms.
+2025-06-19 11:19:40.894 [info] Extracted extension to file:///home/ffaraazm/.vscode-server/extensions/github.copilot-1.336.0: github.copilot
+2025-06-19 11:19:40.911 [info] Renamed to /home/ffaraazm/.vscode-server/extensions/github.copilot-1.336.0
+2025-06-19 11:19:40.924 [info] Marked extension as removed github.copilot-1.335.0
+2025-06-19 11:19:40.929 [info] Extension installed successfully: github.copilot file:///home/ffaraazm/.vscode-server/extensions/extensions.json
+2025-06-19 11:24:32.722 [info] New EH opened, aborting shutdown
+2025-06-19 17:14:00.951 [info] [<unknown>][81837d54][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-06-19 17:14:00.953 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/server-main.js:191:1060)
+    at process.emit (node:events:530:35)
+2025-06-19 20:13:40.599 [info] [<unknown>][e724e084][ExtensionHostConnection] <701704> Extension Host Process exited with code: 0, signal: null.
+2025-06-19 20:13:40.600 [info] Last EH closed, waiting before shutting down
+2025-06-19 20:14:09.450 [info] [<unknown>][81837d54][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2025-06-19 20:18:40.600 [info] Last EH closed, shutting down

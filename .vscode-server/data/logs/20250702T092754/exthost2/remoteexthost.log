@@ -1,0 +1,76 @@
+2025-07-02 14:56:24.404 [info] Extension host with pid 205753 started
+2025-07-02 14:56:24.411 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/6ae79a745387ba861ab868dc3a8708bb/vscode.lock': Lock acquired.
+2025-07-02 14:56:26.645 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-07-02 14:56:26.646 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-07-02 14:56:26.943 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-07-02 14:56:26.944 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-07-02 14:56:27.069 [info] Eager extensions activated
+2025-07-02 14:56:27.070 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-07-02 14:56:27.070 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-07-02 14:56:27.354 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-07-02 14:56:27.412 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1000
+2025-07-02 14:56:28.562 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-07-02 14:56:28.633 [warning] [Decorations] CAPPING events from decorations provider vscode.git 1000
+2025-07-02 15:00:05.371 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-07-02 15:00:10.546 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-07-02 15:00:10.546 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-07-02 15:00:10.547 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:21.687 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.689 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.693 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.693 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.694 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.694 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.694 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 15:04:22.694 [error] Error: Git error
+	at ChildProcess.<anonymous> (/home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/extensions/git/dist/main.js:2:604610)
+	at ChildProcess.emit (node:events:530:35)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-07-02 17:29:37.655 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-07-02 17:29:37.656 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/6ae79a745387ba861ab868dc3a8708bb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-07-02 17:29:37.675 [info] Extension host with pid 205753 exiting with code 0

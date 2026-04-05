@@ -1,0 +1,216 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-5270544f-1717-4d2e-94a1-bc74bb8cbe12
+Extension host agent listening on /tmp/code-5270544f-1717-4d2e-94a1-bc74bb8cbe12
+
+[08:53:30] 
+
+
+
+
+[08:53:30] Extension host agent started.
+[08:53:30] [<unknown>][3f9c9c72][ManagementConnection] New connection established.
+[08:53:30] [<unknown>][af0f3771][ExtensionHostConnection] New connection established.
+[08:53:30] Marked extension as removed github.copilot-chat-0.28.4
+[08:53:30] Deleted marked for removal extension from disk github.copilot-chat /home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.4
+[08:53:30] [<unknown>][af0f3771][ExtensionHostConnection] <231085> Launched Extension Host Process.
+[08:53:30] ComputeTargetPlatform: linux-x64
+[08:53:34] ComputeTargetPlatform: linux-x64
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 4 on pty host
+stack trace: CodeExpectedError: Could not find pty 4 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[08:53:34] Error [CodeExpectedError]: Could not find pty 4 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 6 on pty host
+stack trace: CodeExpectedError: Could not find pty 6 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[08:53:34] Error [CodeExpectedError]: Could not find pty 6 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+New EH opened, aborting shutdown
+[08:58:30] New EH opened, aborting shutdown
+[09:33:41] [<unknown>][c9deeba2][ManagementConnection] New connection established.
+[09:33:41] [<unknown>][2a90aebc][ExtensionHostConnection] New connection established.
+[09:33:41] [<unknown>][2a90aebc][ExtensionHostConnection] <235857> Launched Extension Host Process.
+[09:34:43] [<unknown>][c9deeba2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[09:34:43] [<unknown>][2a90aebc][ExtensionHostConnection] <235857> Extension Host Process exited with code: 0, signal: null.
+[09:34:51] [<unknown>][4eaaa235][ManagementConnection] New connection established.
+[09:34:51] [<unknown>][da44c1f3][ExtensionHostConnection] New connection established.
+[09:34:51] [<unknown>][da44c1f3][ExtensionHostConnection] <236176> Launched Extension Host Process.
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 9 on pty host
+stack trace: CodeExpectedError: Could not find pty 9 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[09:34:55] Error [CodeExpectedError]: Could not find pty 9 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 13 on pty host
+stack trace: CodeExpectedError: Could not find pty 13 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[09:34:55] Error [CodeExpectedError]: Could not find pty 13 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 13 on pty host
+stack trace: CodeExpectedError: Could not find pty 13 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[09:34:55] Error [CodeExpectedError]: Could not find pty 13 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateIcon (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1889)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[10:33:25] [<unknown>][af0f3771][ExtensionHostConnection] The client has reconnected.
+[10:33:25] [<unknown>][da44c1f3][ExtensionHostConnection] The client has reconnected.
+[14:36:18] [<unknown>][af0f3771][ExtensionHostConnection] The client has reconnected.
+[14:36:18] [<unknown>][da44c1f3][ExtensionHostConnection] The client has reconnected.
+[14:54:12] [<unknown>][3f9c9c72][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[14:54:12] [<unknown>][af0f3771][ExtensionHostConnection] <231085> Extension Host Process exited with code: 0, signal: null.
+[14:54:41] [<unknown>][5aaf60b7][ManagementConnection] New connection established.
+[14:54:41] [<unknown>][1cdbd54d][ExtensionHostConnection] New connection established.
+[14:54:41] [<unknown>][1cdbd54d][ExtensionHostConnection] <265122> Launched Extension Host Process.
+rejected promise not handled within 1 second: CodeExpectedError: Could not find pty 10 on pty host
+stack trace: CodeExpectedError: Could not find pty 10 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[14:54:44] Error [CodeExpectedError]: Could not find pty 10 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)

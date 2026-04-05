@@ -1,0 +1,61 @@
+name: Docs Linting
+
+on:
+  workflow_call:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  lint-md:
+    name: "Markdown"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Fetch config
+        shell: sh
+        run: |
+          test -f .markdownlint.yaml && echo "Using local config file" || curl --silent --show-error --fail --location https://raw.github.com/ROCm/rocm-docs-core/develop/.markdownlint.yaml -O
+      - name: Use markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v10.0.1
+        with:
+          globs: "**/*.md"
+
+  spelling:
+    name: "Spelling"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Fetch config
+        if: ${{ ! contains( github.repository, 'rocm-docs-core') }}
+        shell: sh
+        run: |
+          curl --silent --show-error --fail --location https://raw.github.com/ROCm/rocm-docs-core/develop/.github/workflows/yaml_merger.py -o .github/workflows/yaml_merger.py
+          curl --silent --show-error --fail --location https://raw.github.com/ROCm/rocm-docs-core/develop/.spellcheck.yaml -O
+          curl --silent --show-error --fail --location https://raw.github.com/ROCm/rocm-docs-core/develop/.wordlist.txt >> .wordlist.txt
+      - name: Check local spelling file
+        id: check_local_spelling
+        run: |
+          if [ -f .spellcheck.local.yaml ]; then
+            echo "check_result=true" >> $GITHUB_OUTPUT
+          else
+            echo "check_result=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Merge local and main YAML files
+        if: steps.check_local_spelling.outputs.check_result == 'true'
+        shell: sh
+        run: |
+          python3 .github/workflows/yaml_merger.py .spellcheck.yaml .spellcheck.local.yaml .spellcheck.yaml
+      - name: Run spellcheck
+        uses: rojopolis/spellcheck-github-actions@0.49.0
+      - name: On fail
+        if: failure()
+        run: |
+          echo "Please check for spelling mistakes or add them to '.wordlist.txt' in either the root of this project or in rocm-docs-core."

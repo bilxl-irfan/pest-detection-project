@@ -1,0 +1,30 @@
+2025-06-30 13:07:47.075 [info] [main] Log level: Info
+2025-06-30 13:07:47.075 [info] [main] Validating found git in: "git"
+2025-06-30 13:07:47.075 [info] [main] Using git "2.43.0" from "git"
+2025-06-30 13:07:47.075 [info] [Model][doInitialScan] Initial repository scan started
+2025-06-30 13:07:47.075 [info] > git rev-parse --show-toplevel [21ms]
+2025-06-30 13:07:47.075 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-06-30 13:07:47.075 [info] [Model][openRepository] Opened repository (path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 13:07:47.075 [info] [Model][openRepository] Opened repository (real path): /home/ffaraazm/rocm-blogs-internal
+2025-06-30 13:07:47.075 [info] > git config --get commit.template [4ms]
+2025-06-30 13:07:47.075 [info] > git rev-parse --show-toplevel [2ms]
+2025-06-30 13:07:47.078 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [4ms]
+2025-06-30 13:07:47.089 [info] > git rev-parse --show-toplevel [12ms]
+2025-06-30 13:07:47.093 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-30 13:07:47.097 [info] > git status -z -uall [15ms]
+2025-06-30 13:07:47.098 [info] > git rev-parse --show-toplevel [1ms]
+2025-06-30 13:07:47.104 [info] > git rev-parse --show-toplevel [3ms]
+2025-06-30 13:07:47.106 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-06-30 13:07:47.120 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [35ms]
+2025-06-30 13:07:47.155 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [21ms]
+2025-06-30 13:07:47.160 [info] > git config --get --local branch.faraaz-bot-removeBigFiles.vscode-merge-base [1ms]
+2025-06-30 13:07:47.163 [info] > git config --get commit.template [8ms]
+2025-06-30 13:07:47.166 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/develop refs/remotes/origin/develop [3ms]
+2025-06-30 13:07:47.166 [warning] [Git][getBranch] No such branch: origin/develop
+2025-06-30 13:07:47.169 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/faraaz-bot-removeBigFiles refs/remotes/faraaz-bot-removeBigFiles [3ms]
+2025-06-30 13:07:47.175 [info] > git reflog faraaz-bot-removeBigFiles --grep-reflog=branch: Created from *. [7ms]
+2025-06-30 13:07:47.179 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2025-06-30 13:07:47.179 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-06-30 13:07:47.180 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-06-30 13:07:47.188 [info] > git status -z -uall [16ms]
+2025-06-30 13:07:47.202 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [27ms]

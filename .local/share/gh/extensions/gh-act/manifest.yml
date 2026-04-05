@@ -1,0 +1,6 @@
+owner: nektos
+name: gh-act
+host: github.com
+tag: v0.2.76
+ispinned: false
+path: /home/ffaraazm/.local/share/gh/extensions/gh-act/gh-act

@@ -1,0 +1,31 @@
+2025-06-27 14:17:07.208 [info] 
+
+
+
+
+2025-06-27 14:17:07.215 [info] Extension host agent started.
+2025-06-27 14:17:07.256 [info] [<unknown>][b9294f2e][ManagementConnection] New connection established.
+2025-06-27 14:17:07.267 [info] [<unknown>][b74ec647][ExtensionHostConnection] New connection established.
+2025-06-27 14:17:07.278 [info] Deleted marked for removal extension from disk github.copilot /home/ffaraazm/.vscode-server/extensions/github.copilot-1.336.0
+2025-06-27 14:17:07.278 [info] Deleted marked for removal extension from disk github.copilot-chat /home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.2
+2025-06-27 14:17:07.346 [info] [<unknown>][b74ec647][ExtensionHostConnection] <911764> Launched Extension Host Process.
+2025-06-27 14:17:07.375 [info] ComputeTargetPlatform: linux-x64
+2025-06-27 14:17:11.382 [error] CodeExpectedError: Could not find pty 21 on pty host
+    at O.W (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:6391)
+    at O.updateTitle (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:46:1839)
+    at R.s.<computed> (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2933)
+    at Object.call (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at ml.s (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:81286)
+    at ml.q (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80809)
+    at ps.value (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80211)
+    at E.B (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at E.fire (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///home/ffaraazm/.vscode-server/cli/servers/Stable-dfaf44141ea9deb3b4096f7cd6d24e00c147a4b1/server/out/vs/platform/terminal/node/ptyHostMain.js:24:30052)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+2025-06-27 14:17:12.501 [info] ComputeTargetPlatform: linux-x64
+2025-06-27 14:22:07.215 [info] New EH opened, aborting shutdown
+2025-06-27 15:49:00.673 [info] [<unknown>][b9294f2e][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-06-27 15:49:00.706 [info] [<unknown>][b74ec647][ExtensionHostConnection] <911764> Extension Host Process exited with code: 0, signal: null.
+2025-06-27 15:49:00.707 [info] Last EH closed, waiting before shutting down

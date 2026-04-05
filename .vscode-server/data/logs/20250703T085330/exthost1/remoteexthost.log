@@ -1,0 +1,18 @@
+2025-07-03 08:53:31.005 [info] Extension host with pid 231085 started
+2025-07-03 08:53:31.013 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/6ae79a745387ba861ab868dc3a8708bb/vscode.lock': Lock acquired.
+2025-07-03 08:53:33.417 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-07-03 08:53:33.418 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-07-03 08:53:33.742 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-07-03 08:53:33.742 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-07-03 08:53:33.908 [info] Eager extensions activated
+2025-07-03 08:53:33.908 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-07-03 08:53:33.908 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-07-03 08:53:34.157 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-07-03 08:53:35.047 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-07-03 08:56:25.466 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-07-03 08:56:30.607 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-07-03 08:56:30.607 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-07-03 08:56:30.607 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-07-03 14:54:12.390 [info] Extension host terminating: received terminate message from renderer
+2025-07-03 14:54:12.390 [info] Lock '/home/ffaraazm/.vscode-server/data/User/workspaceStorage/6ae79a745387ba861ab868dc3a8708bb/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-07-03 14:54:12.413 [info] Extension host with pid 231085 exiting with code 0

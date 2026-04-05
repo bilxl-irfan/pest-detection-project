@@ -1,0 +1,26 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-44f52fad-b85b-4381-a06a-74495ef2bf25
+Extension host agent listening on /tmp/code-44f52fad-b85b-4381-a06a-74495ef2bf25
+
+[10:58:24] 
+
+
+
+
+[10:58:24] Extension host agent started.
+[10:58:24] [<unknown>][f3f1556f][ExtensionHostConnection] New connection established.
+[10:58:24] [<unknown>][92d330d3][ManagementConnection] New connection established.
+[10:58:24] [<unknown>][f3f1556f][ExtensionHostConnection] <599475> Launched Extension Host Process.
+[10:58:24] ComputeTargetPlatform: linux-x64
+[11:00:20] [<unknown>][92d330d3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[11:01:06] [/home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.0]: Extension is not compatible with Code 1.100.1. Extension requires: ^1.101.0-20250523.
+[11:01:06] [/home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.0]: This extension is using the API proposal 'languageModelDataPart' that is not compatible with the current version of VS Code.
+[11:01:06] Extensions added from another source github.copilot-chat file:///home/ffaraazm/.vscode-server/extensions/extensions.json
+[11:01:06] [/home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.0]: Extension is not compatible with Code 1.100.1. Extension requires: ^1.101.0-20250523.
+[11:01:06] [/home/ffaraazm/.vscode-server/extensions/github.copilot-chat-0.28.0]: This extension is using the API proposal 'languageModelDataPart' that is not compatible with the current version of VS Code.

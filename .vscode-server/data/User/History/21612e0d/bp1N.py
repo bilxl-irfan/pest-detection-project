@@ -1,0 +1,133 @@
+# Configuration file for the Sphinx documentation builder.
+#
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+import os
+import shutil
+
+import ablog
+import jinja2
+from rocm_docs import ROCmDocs
+from sphinx import addnodes
+from sphinx.ext.autodoc import cut_lines
+from sphinx.util.docfields import GroupedField
+
+ablog_builder = "dirhtml"
+ablog_website = "_website"
+
+# Environement to process Jinja templates.
+jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
+
+# Jinja templates to render out.
+templates = []
+
+latex_engine = "xelatex"
+latex_elements = {
+    "fontpkg": r"""
+\usepackage{tgtermes}
+\usepackage{tgheros}
+\renewcommand\ttdefault{txtt}
+"""
+}
+
+# configurations for PDF output by Read the Docs
+project = "ROCm Blogs"
+author = "Advanced Micro Devices, Inc."
+copyright = "Copyright (c) 2023-2024 Advanced Micro Devices, Inc. All rights reserved."
+
+setting_all_article_info = False
+all_article_info_os = ["linux", "windows"]
+all_article_info_author = ""
+
+exclude_patterns = ["temp"]
+
+external_toc_path = "./sphinx/_toc.yml"
+
+external_projects_current_project = "rocm"
+blog_title = "AMD ROCm Blogs"
+blog_baseurl = "https://rocm.blogs.amd.com/"
+
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "rocm.blogs.amd.com")
+html_context = {}
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True
+
+html_title = "ROCm Blogs"
+html_theme = "rocm_docs_theme"
+html_theme_options = {
+    "flavor": "rocm-blogs",
+    "show_prev_next": False,
+    "navbar_presistent": ["navbar-icon-links.html", "search-field.html"],
+}
+
+html_sidebars = {"**": []}
+
+post_show_prev_next = False
+
+extensions = [
+    "rocm_docs",
+    "sphinx.ext.intersphinx",
+    "myst_parser",
+    "rocm_blogs",
+    "ablog",
+]
+external_toc_path = "./sphinx/_toc.yml"
+
+hoverxref_api_host = "/_"
+
+
+templates_path = ["."]
+
+blog_feed_length = 10
+
+html_static_path = ["_static", "images"]
+
+html_css_files = ["css/custom.css", "css/asciinema-player.css"]
+
+html_js_files = [
+    "js/asciinema-player.min.js",
+]
+
+nitpicky = True
+nitpick_ignore = []
+for line in open("nitpick-exceptions"):
+    if line.strip() == "" or line.startswith("#"):
+        continue
+    dtype, target = line.split(None, 1)
+    target = target.strip()
+    nitpick_ignore.append((dtype, target))
+
+
+def parse_event(env, sig, signode):
+    event_sig_re = re.compile(r"([a-zA-Z-]+)\s*\((.*)\)")
+    m = event_sig_re.match(sig)
+    if not m:
+        signode += addnodes.desc_name(sig, sig)
+        return sig
+    name, args = m.groups()
+    signode += addnodes.desc_name(name, name)
+    plist = addnodes.desc_parameterlist()
+    for arg in args.split(","):
+        arg = arg.strip()
+        plist += addnodes.desc_parameter(arg, arg)
+    signode += plist
+    return name
+
+
+def setup(app):
+    app.connect("autodoc-process-docstring", cut_lines(4, what=["module"]))
+    app.add_css_file("css/custom.css")
+    app.add_object_type(
+        "confval",
+        "confval",
+        objname="configuration value",
+        indextemplate="pair: %s; configuration value",
+    )
+    fdesc = GroupedField(
+        "parameter", label="Parameters", names=["param"], can_collapse=True
+    )
+    app.add_object_type(
+        "event", "event", "pair: %s; event", parse_event, doc_field_types=[fdesc]
+    )
