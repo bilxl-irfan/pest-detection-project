@@ -353,7 +353,7 @@ async def upload_image(file: UploadFile = File(...)):
       1. Save raw drone JPG with sequential YYYYMMDD_FIELD01_FLIGHT01_XXX naming.
       2. Extract GPS metadata from EXIF (lat, lon, alt, focal_length).
       3. Tile image in memory into 640×640 buffers (images_split logic).
-      4. Run YOLO-DP inference + EigenCAM XAI on every tile.
+      4. Run YOLO-DP inference + GradCAM XAI on every tile.
       5. Attach GPS coordinates to each detection bounding box.
       6. Persist best detection to latest_detection.json; append to history.
     """
