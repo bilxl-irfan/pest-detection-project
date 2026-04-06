@@ -43,7 +43,7 @@ const CONCEPTS = [
     id: 2,
     title: 'XAI Heatmap Badge',
     color: '#d97706',
-    detail: 'Visible when an Explainable AI overlay exists for this tile. Uses EigenCAM to highlight the image regions that most influenced the model\'s decision. Only generated for Unhealthy detections to save compute. Toggle Raw ↔ Heatmap in the detail view.',
+    detail: 'Visible when a Gradient-weighted Class Activation Map (Grad-CAM) overlay exists for this tile. Grad-CAM backpropagates the class score gradient through the final convolutional layer to pinpoint the exact textures, lesions, or discolouration that triggered the Unhealthy classification — making it class-specific, not just attention-based. Only generated for Unhealthy detections. Toggle Raw ↔ Heatmap in the detail view.',
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ function SampleCard({ active, onToggle }: { active: number | null; onToggle: (id
     <div style={{ background: 'white', borderRadius: 16, overflow: 'hidden', border: '1px solid #e2e8f0', width: '100%', maxWidth: 300 }}>
       {/* Image */}
       <div style={{ position: 'relative', aspectRatio: '1', background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 60%, #162032 100%)' }}>
-        {/* Simulated EigenCAM heatmap blob */}
+        {/* Simulated GradCAM heatmap blob */}
         <div style={{
           position: 'absolute', top: '26%', left: '20%', width: '58%', height: '52%', borderRadius: '50%',
           background: 'radial-gradient(ellipse, rgba(239,68,68,0.55) 0%, rgba(251,146,60,0.32) 45%, transparent 70%)',
@@ -366,17 +366,17 @@ function XaiSection() {
         <div style={{ width: 32, height: 32, borderRadius: 8, background: '#fffbeb', border: '1px solid #fde68a', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d97706" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
-        <h2 style={{ fontWeight: 700, fontSize: 16, color: '#0f172a' }}>Explainable AI (XAI) — EigenCAM</h2>
+        <h2 style={{ fontWeight: 700, fontSize: 16, color: '#0f172a' }}>Explainable AI (XAI) — Grad-CAM</h2>
       </div>
       <p style={{ fontSize: 13, color: '#64748b', marginBottom: 16, lineHeight: 1.6 }}>
-        AGROSCAN uses <strong>EigenCAM</strong> to generate saliency heatmaps that show <em>where</em> in the image the model focused when making its decision — not just what it decided.
+        AGROSCAN uses <strong>Gradient-weighted Class Activation Mapping (Grad-CAM)</strong> to generate class-specific saliency heatmaps — showing not just <em>where</em> the model looked, but <em>which visual features drove the specific Unhealthy classification</em>. This distinguishes it from generic attention maps that are class-agnostic.
       </p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
         {[
-          { icon: '🎯', title: 'What it shows', text: 'Warmer colours (red/orange) highlight regions with the highest model attention. These are the pixels that most influenced the Unhealthy prediction.' },
-          { icon: '🔬', title: 'How it works', text: 'EigenCAM computes the principal component of the final convolutional feature maps. The heatmap is masked to the bounding box of the top detection for focused insight.' },
-          { icon: '⚡', title: 'When it runs', text: 'Only generated for Unhealthy detections. Healthy tiles skip XAI to save GPU cycles. If a tile shows the XAI badge, the heatmap is available in the detail view.' },
-          { icon: '🔄', title: 'How to use it', text: 'Open a detection\'s detail panel and click the Raw / Heatmap toggle in the top-right of the image. The overlay blends at 85% opacity so the original tile is still visible beneath.' },
+          { icon: '🎯', title: 'What it shows', text: 'Warmer colours (red/orange) highlight the exact textures, lesions, or discolouration that caused the model to classify the tile as Unhealthy. Cool colours (blue/green) indicate areas the model considered irrelevant to the pest signal.' },
+          { icon: '🔬', title: 'How it works', text: 'Grad-CAM backpropagates the gradient of the Unhealthy class score through the final convolutional layer. Each feature map channel is weighted by its average gradient, then combined into a single activation map — making it inherently class-specific rather than just showing general attention.' },
+          { icon: '⚡', title: 'When it runs', text: 'Only generated for Unhealthy detections. Healthy tiles skip XAI to conserve GPU cycles. The heatmap is further masked to the bounding box of the top detection so the overlay focuses on the actual pest region, not the full tile.' },
+          { icon: '🔄', title: 'How to use it', text: 'Open any Unhealthy detection\'s detail panel and click the Raw / Heatmap toggle in the top-right of the image. The Grad-CAM overlay blends at 85% opacity so the original tile remains visible beneath, letting you cross-reference the highlighted region with the actual crop.' },
         ].map(item => (
           <div key={item.title} style={{ background: '#fffbeb', border: '1px solid #fef3c7', borderRadius: 10, padding: '12px 14px' }}>
             <div style={{ fontSize: 18, marginBottom: 4 }}>{item.icon}</div>
@@ -420,7 +420,7 @@ export default function InfoPage() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 16 }}>
           {[
             { label: 'YOLOv5-DP Model', color: '#16a34a' },
-            { label: 'EigenCAM XAI', color: '#d97706' },
+            { label: 'GradCAM XAI', color: '#d97706' },
             { label: 'HITL Retraining', color: '#7c3aed' },
             { label: 'GPS Mapping', color: '#0891b2' },
           ].map(tag => (

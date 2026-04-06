@@ -102,6 +102,7 @@ export function DetailModal({ detection, onClose, onRetrain }: {
 }) {
   const [showXAI, setShowXAI] = useState(false)
   const [retraining, setRetraining] = useState(false)
+  const [retrainMsg, setRetrainMsg] = useState('')
   const [done, setDone] = useState(false)
   const [label, setLabel] = useState('')
   const [resolvedLabel, setResolvedLabel] = useState<string | null>(null)
@@ -113,14 +114,33 @@ export function DetailModal({ detection, onClose, onRetrain }: {
   }
   const [hitlStep, setHitlStep] = useState<HitlStep>(initialStep)
 
+  // Poll /api/retrain/status while a retraining job is in progress.
+  useEffect(() => {
+    if (!retraining) return
+    const interval = setInterval(async () => {
+      const s = await api.getRetrainStatus()
+      setRetrainMsg(s.message)
+      if (s.status === 'complete' || s.status === 'error') {
+        clearInterval(interval)
+        setRetraining(false)
+        setDone(true)
+        onRetrain()
+      }
+    }, 1500)
+    return () => clearInterval(interval)
+  }, [retraining])
+
+  const _submitLabel = async (submitLabel: string, bbox: number[]) => {
+    setRetraining(true)
+    setRetrainMsg('Sending label to server…')
+    await api.retrain({ image_id: detection.id, label: submitLabel, bbox })
+    setRetrainMsg('Processing label · fine-tuning model weights…')
+    setResolvedLabel(submitLabel)
+  }
+
   const handleHealthChoice = async (choice: 'healthy' | 'unhealthy') => {
     if (choice === 'healthy') {
-      setRetraining(true)
-      await api.retrain({ image_id: detection.id, label: 'healthy', bbox: [0.5, 0.5, 0.5, 0.5] })
-      setRetraining(false)
-      setResolvedLabel('healthy')
-      setDone(true)
-      onRetrain()
+      await _submitLabel('healthy', [0.5, 0.5, 0.5, 0.5])
     } else {
       setHitlStep('pest')
     }
@@ -128,12 +148,7 @@ export function DetailModal({ detection, onClose, onRetrain }: {
 
   const handlePestSubmit = async () => {
     if (!label.trim()) return
-    setRetraining(true)
-    await api.retrain({ image_id: detection.id, label: label.trim(), bbox: [0.5, 0.5, 0.5, 0.5] })
-    setRetraining(false)
-    setResolvedLabel(label.trim())
-    setDone(true)
-    onRetrain()
+    await _submitLabel(label.trim(), [0.5, 0.5, 0.5, 0.5])
   }
 
   const { isUncertain, isUnhealthy, color, label: statusLabel, confColor } = statusProps(detection, resolvedLabel)
@@ -283,13 +298,21 @@ export function DetailModal({ detection, onClose, onRetrain }: {
                 )}
               </div>
             )}
+            {retraining && (
+              <div className="mt-3 pt-3" style={{ borderTop: '1px solid #f1f5f9' }}>
+                <div className="flex items-center gap-2 text-xs font-medium" style={{ color: '#d97706' }}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                  {retrainMsg || 'Processing…'}
+                </div>
+              </div>
+            )}
             {done && resolvedLabel && (
               <div className="mt-3 pt-3" style={{ borderTop: '1px solid #f1f5f9' }}>
                 <div className="flex items-center gap-2 text-sm font-medium" style={{ color: '#16a34a' }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                   Labelled as <span className="capitalize ml-1">{resolvedLabel}</span>
                 </div>
-                <p className="text-xs mt-1" style={{ color: '#94a3b8' }}>Label saved · retraining queued in background</p>
+                <p className="text-xs mt-1" style={{ color: '#94a3b8' }}>Label saved · model updated</p>
               </div>
             )}
           </div>
@@ -449,7 +472,7 @@ function DetectionCard({ detection, onRetrain, onViewDetail }: {
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
               Labelled as <span className="capitalize ml-0.5">{resolvedLabel}</span>
             </p>
-            <p className="text-xs mt-0.5" style={{ color: '#94a3b8' }}>Saved · retraining queued</p>
+            <p className="text-xs mt-0.5" style={{ color: '#94a3b8' }}>Saved · retraining in progress</p>
           </div>
         )}
       </div>

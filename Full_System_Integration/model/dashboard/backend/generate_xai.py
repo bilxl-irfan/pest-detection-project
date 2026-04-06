@@ -34,7 +34,7 @@ def load_model(model_path: str):
 
 class _YOLOv5GradCAMWrapper(torch.nn.Module):
     """
-    Wraps the inner YOLOv5 DetectionModel so GradCAM receives a plain tensor.
+    Wraps the YOLOv5 DetectionModel so GradCAM receives a plain tensor.
     In eval mode Detect returns (predictions, training_list); we return only
     the predictions tensor so pytorch_grad_cam doesn't choke on the tuple.
     torch.enable_grad() is required because GradCAM needs gradients to flow.
@@ -70,7 +70,7 @@ class _YOLOv5GradCAMTarget:
 
 def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict | None:
     """
-    Run YOLOv5 inference + GradCAM heatmap on a single 640×640 BGR tile.
+    Run YOLOv5 inference + GradCAM heatmap on a single 640x640 BGR tile.
 
     Heatmap is:
       - Generated from the last backbone layer (model[-2])
@@ -107,12 +107,14 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
         rgb_img = cv2.cvtColor(tile_img, cv2.COLOR_BGR2RGB)
         img_float = np.float32(rgb_img) / 255.0
         input_tensor = torch.from_numpy(img_float).permute(2, 0, 1).unsqueeze(0)
+        input_tensor.requires_grad_(True)
 
         try:
-            dm = hub_model.model.model           # DetectionModel
-            target_layers = [dm.model[-2]]       # last backbone layer (C3, index -2)
+            # hub_model (AutoShape) -> .model = DetectionModel -> .model = nn.Sequential
+            det_model = hub_model.model              # DetectionModel
+            target_layers = [det_model.model[-2]]    # last backbone layer (C3, index -2)
 
-            wrapped = _YOLOv5GradCAMWrapper(dm)
+            wrapped = _YOLOv5GradCAMWrapper(det_model)
             targets = [_YOLOv5GradCAMTarget(cls_idx=cls_id, box_idx=0)]
             cam = GradCAM(model=wrapped, target_layers=target_layers)
             grayscale_cam = cam(input_tensor=input_tensor, targets=targets)[0]  # (640, 640)
@@ -125,7 +127,10 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
             masked_cam[y1:y2, x1:x2] = grayscale_cam[y1:y2, x1:x2]
 
             # Output: 640x640 transparent RGBA PNG (jet colormap, alpha = intensity)
-            jet = cm.get_cmap("jet")
+            try:
+                jet = cm.colormaps["jet"]
+            except AttributeError:
+                jet = cm.get_cmap("jet")
             heatmap_rgba = (jet(masked_cam) * 255).astype(np.uint8)
             heatmap_rgba[:, :, 3] = (masked_cam * 255).astype(np.uint8)
             heatmap_bgra = cv2.cvtColor(heatmap_rgba, cv2.COLOR_RGBA2BGRA)
@@ -138,7 +143,7 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
             xai_generated = True
 
         except Exception as e:
-            print(f"[XAI] Heatmap failed ({e}), skipping.")
+            print(f"[XAI] Heatmap failed ({type(e).__name__}: {e}), skipping.")
 
     return {
         "pestType": pest_name,
