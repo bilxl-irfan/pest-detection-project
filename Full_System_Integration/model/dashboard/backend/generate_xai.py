@@ -12,7 +12,7 @@ if YOLOV5_PATH not in sys.path:
     sys.path.insert(0, YOLOV5_PATH)
 
 import matplotlib.cm as cm
-from pytorch_grad_cam import EigenCAM
+from pytorch_grad_cam import GradCAM
 
 _model_cache: dict = {}
 
@@ -32,29 +32,51 @@ def load_model(model_path: str):
     return _model_cache[abs_path]
 
 
-class _YOLOv5EigenCAMWrapper(torch.nn.Module):
+class _YOLOv5GradCAMWrapper(torch.nn.Module):
     """
-    Wraps the inner YOLOv5 DetectionModel so EigenCAM receives a plain tensor.
+    Wraps the inner YOLOv5 DetectionModel so GradCAM receives a plain tensor.
     In eval mode Detect returns (predictions, training_list); we return only
     the predictions tensor so pytorch_grad_cam doesn't choke on the tuple.
+    torch.enable_grad() is required because GradCAM needs gradients to flow.
     """
     def __init__(self, detection_model):
         super().__init__()
         self.model = detection_model
 
     def forward(self, x):
-        out = self.model(x)
+        with torch.enable_grad():
+            out = self.model(x)
         return out[0] if isinstance(out, (list, tuple)) else out
+
+
+class _YOLOv5GradCAMTarget:
+    """
+    GradCAM target that extracts a scalar from YOLOv5's raw prediction tensor.
+    Returns objectness * class_score for the top detection, giving GradCAM a
+    meaningful gradient signal tied to that specific detection.
+    """
+    def __init__(self, cls_idx: int, box_idx: int = 0):
+        self.cls_idx = cls_idx
+        self.box_idx = box_idx
+
+    def __call__(self, model_output):
+        # model_output shape: [batch, num_anchors, 5+num_classes] or [num_anchors, 5+num_classes]
+        if model_output.dim() == 3:
+            pred = model_output[0, self.box_idx]
+        else:
+            pred = model_output[self.box_idx]
+        return pred[4] * pred[5 + self.cls_idx]  # objectness * class confidence
 
 
 def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict | None:
     """
-    Run YOLOv5 inference + EigenCAM heatmap on a single 640×640 BGR tile.
+    Run YOLOv5 inference + GradCAM heatmap on a single 640×640 BGR tile.
 
     Heatmap is:
-      - Generated from the C3 decoupled-head layer (model[-2])
+      - Generated from the last backbone layer (model[-2])
+      - Guided by objectness * class_score of the top detection
       - Masked to the top detection bounding box area only
-      - Skipped (raw tile saved) for tiles with no detection
+      - Skipped for tiles with no detection
 
     Returns a detection dict including the HITL flag, or None if no detection.
     """
@@ -79,7 +101,7 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
     requires_review = 0.4 < conf_raw < 0.6
     status = "requires_human_label" if requires_review else "confirmed"
 
-    # --- XAI: only run EigenCAM for unhealthy detections (saves GPU cycles) ---
+    # --- XAI: only run GradCAM for unhealthy detections (saves GPU cycles) ---
     xai_generated = False
     if pest_name.lower() == "unhealthy":
         rgb_img = cv2.cvtColor(tile_img, cv2.COLOR_BGR2RGB)
@@ -88,11 +110,12 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
 
         try:
             dm = hub_model.model.model           # DetectionModel
-            target_layers = [dm.model[-2]]       # C3 classification branch (index 23)
+            target_layers = [dm.model[-2]]       # last backbone layer (C3, index -2)
 
-            wrapped = _YOLOv5EigenCAMWrapper(dm)
-            cam = EigenCAM(model=wrapped, target_layers=target_layers)
-            grayscale_cam = cam(input_tensor=input_tensor)[0]  # (640, 640)
+            wrapped = _YOLOv5GradCAMWrapper(dm)
+            targets = [_YOLOv5GradCAMTarget(cls_idx=cls_id, box_idx=0)]
+            cam = GradCAM(model=wrapped, target_layers=target_layers)
+            grayscale_cam = cam(input_tensor=input_tensor, targets=targets)[0]  # (640, 640)
 
             # Mask heatmap to bounding box area only
             x1, y1, x2, y2 = (int(v) for v in top[:4])
@@ -129,7 +152,7 @@ def run_xai_on_tile(tile_img: np.ndarray, hub_model, output_path: str) -> dict |
 def run_xai_cycle(image_path: str, model_path: str, output_path: str):
     """
     Legacy single-image entry point (backward compatibility).
-    Resizes the image preserving aspect ratio, runs inference + XAI, writes JSON.
+    Resizes the image preserving aspect ratio, runs inference + GradCAM XAI, writes JSON.
     """
     hub_model = load_model(model_path)
     img = cv2.imread(image_path)
